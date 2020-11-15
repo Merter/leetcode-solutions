@@ -1,0 +1,37 @@
+
+1290. Convert Binary Number in a Linked List to Integer - Easy
+
+Tests
+-----
+[0]	// 0
+[1]	// 1
+[0,0] // 0
+[1,0,1] // 5
+[0,0,0,0,0] // 0
+[1,0,0,1,0,0,1,1,1,0,0,0,0,0,0] // 18880
+[1,1,0,1,0,1,1,0,0,0,1,0,0,0,0,1,0,1,0,0] // 877076
+[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1] // 1073741823
+
+
+Code
+----
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public int getDecimalValue(ListNode head) {
+        int number = 0; // the nodes will not exceed 30, hence the number will be a Java integer        
+        for (ListNode current=head; current!=null; current=current.next) {
+            number *= 2;
+            number += current.val;
+        }        
+        return number;        
+    }
+}
