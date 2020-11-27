@@ -1,0 +1,9 @@
+Tests
+-----
+"a" // 1
+"leetcode" // 2
+"abbcccddddeeeeedcba" // 5
+"triplepillooooow" // 5
+"hooraaaaaaaaaaay" // 11
+"tourist" // 1
+"hooraaaaaaaaaaayyyyyyyyyyyy" // 12
