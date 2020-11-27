@@ -1,0 +1,9 @@
+Tests
+-----
+"i love eating burger" "burg" // 4
+"i love eating burger" "eat" // 3
+"i love eating burger" "burgers" // -1
+"this problem is an easy problem" "pro" // 2
+"i am tired" "you" // -1
+"i use triple pillow" "pill" // 4
+"hello from the other side" "they" // -1
