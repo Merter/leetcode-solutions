@@ -1,0 +1,13 @@
+Tests
+-----
+"a" 1 // "a"
+"a" 2 // "a"
+"abc" 1 // "abcdefg"
+"abcd" 1 // "abcd"
+"abcdefg" 2 // "bacdfeg"
+"abc" 3 // "cba"
+"abcd" 3 // "cbad"
+"abcde" 3 // "cbade"
+"abcdef" 3 // "cbadef"
+"abcdefg" 3 // "cbadefg"
+"abcdefg" 8 // "gfedcba"
