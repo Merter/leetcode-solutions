@@ -1,0 +1,13 @@
+Tests
+-----
+"abciiidef" 3 // 3
+"aeiou" 2 // 2
+"aeiou" 5 // 5
+"leetcode" 3 // 2
+"rhythms" 4 // 0
+"tryhard" 4 // 1
+"a" 1 // 1
+"z" 1 // 0
+"azzzaazzzaaa" 3 // 3 
+"azzzaazzzaaa" 4 // 3
+"zazzzaazzzaaa" 1 // 1
