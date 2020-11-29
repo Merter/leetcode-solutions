@@ -1,11 +1,3 @@
-1352. Product of the Last K Numbers
-
-Tests
------
-
-Code
-----
-
 class ProductOfNumbers1 {
     
     private List<Integer> numbers;
