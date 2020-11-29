@@ -1,0 +1,5 @@
+Tests
+-----
+"Hey" // "yeH"
+"Hey there, how is it goin'?" // "yeH ,ereht woh si ti ?'niog"
+"Let's take LeetCode contest" // "s'teL ekat edoCteeL tsetnoc"
