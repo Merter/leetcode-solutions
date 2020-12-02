@@ -1,0 +1,10 @@
+Tests
+-----
+"abc" "xya" // true
+"abe" "cad" // false
+"leetcodee" "interview" // true
+"merter" "zeynep" // false
+"sualp" "narin" // true
+"mertersualpz" "narinemeksiz" // true
+"mertersualpzeynepsualp" "narinemeksizgonulfuatc" // false
+"mertersualpzeynepsualputrecht" "narinemeksizgonulfuatcantugce" // true
