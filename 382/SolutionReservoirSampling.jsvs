@@ -1,0 +1,42 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+public class SolutionReservoirSampling {
+
+    private ListNode head;
+
+    /** @param head The linked list's head.
+        Note that the head is guaranteed to be not null, so it contains at least one node. */
+    public SolutionReservoirSampling(ListNode head) {
+        this.head = head;
+    }
+
+    /** Returns a random node's value. */
+    public int getRandom() {
+        ListNode selectedNode = head;
+        int size = 1;
+        ListNode current = head.next;
+        while (current != null) {
+            size++;
+            int randomIndex = ThreadLocalRandom.current().nextInt(0, size);
+            if (randomIndex == 0) {
+                selectedNode = current;
+            }
+            current = current.next;
+        }
+        return selectedNode.val;
+    }
+}
+
+/**
+ * Your SolutionReservoirSampling object will be instantiated and called as such:
+ * SolutionReservoirSampling obj = new SolutionReservoirSampling(head);
+ * int param_1 = obj.getRandom();
+ */
