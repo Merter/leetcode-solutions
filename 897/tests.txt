@@ -1,0 +1,6 @@
+Tests
+-----
+[5] // [5]
+[5,1,7] // [1,null,5,null,7]
+[5,1,7,null,null,null,8] // [1,null,5,null,7,null,8]
+[5,1,null,0] // [0,null,1,null,5]
