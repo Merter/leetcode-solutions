@@ -1,0 +1,11 @@
+Tests
+-----
+"x" // 1
+"xXX" // 3
+"abccccdd" // 7
+"aaabbccccDDdddee" // 15
+"aaabbccccdddddee" // 15
+"aaaaabbccccdddee" // 15
+"aaaaabbccccdddzee" // 15
+"zaaaaabbccccdddee" // 15
+"aaaaabbcccczdddee" // 15
