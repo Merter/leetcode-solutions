@@ -1,0 +1,12 @@
+Tests
+-----
+"" [] // ""
+"abpcplea" ["ale","apple","monkey","plea"] // "apple"
+"abpcplea" ["ale","apple","monkey","plea", "appla"] // "appla"
+"abpcplea" ["ale","apple","monkey","plea", "appple"] // "apple"
+"abpcplea" ["alem","mapple","monkey","plum", "appple"] // ""
+"abpcplea" ["z"] // ""
+"abpcplea" [] // ""
+"abcabc" ["abccc"] // ""
+"abcabc" ["abccc", "abca", "abcb"] // "abca"
+"aewfafwafjlwajflwajflwafj" ["apple","ewaf","awefawfwaf","awef","awefe","ewafeffewafewf"] // "ewaf"
