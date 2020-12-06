@@ -1,0 +1,10 @@
+Tests
+-----
+"G" // "G"
+"()" // "o"
+"(al)" // "al"
+"(al)()" // "alo"
+"G()(al)" // "Goal"
+"G()()()()(al)" // "Gooooal"
+"(al)G(al)()()G" // "alGalooG"
+"G()()G(al)" // "GooGal"
