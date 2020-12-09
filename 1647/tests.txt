@@ -1,0 +1,13 @@
+Tests
+-----
+"a" // 0
+"ab" // 1
+"abc" // 2
+"aba" // 0
+"abab" // 1
+"aabbcc" // 3
+"ceabaacb" // 2
+"aaabbbcc" // 2
+"eeefccccddddaaaaabbbb" // 6
+"eeefccccddddaaaaabbbbggg" // 9
+"eeefccccddddaaaaabbbbgggh" // 10
