@@ -1,0 +1,10 @@
+Tests
+-----
+"A man, a plan, a canal: Panama"	// true
+"race a car"	// false
+"z"	// true
+"Az4Za"	// true
+"AzZa"	// true
+"0P"	// false
+"3AzZa3"	// true
+"3AzZa2"	// false
