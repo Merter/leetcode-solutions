@@ -1,0 +1,6 @@
+Tests
+-----
+["eat","tea","tan","ate","nat","bat"]	// [["bat"],["nat","tan"],["ate","eat","tea"]]
+[""] // [[""]]
+["a"]	// [["a"]]
+["sa", "as", "as", "asa", "saa"]	// [["as", "sa", "sa"], ["saa", "asa"]]
