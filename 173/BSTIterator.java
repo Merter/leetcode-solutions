@@ -15,30 +15,39 @@
  */
 class BSTIterator {
 
-    private ArrayList<Integer> sortedNodeValues = new ArrayList<>();
-    private int iteratorPosition = 0;
+    private final Deque<TreeNode> nextNodesStack = new ArrayDeque<>();
+    private TreeNode currentNode;
     
-    public BSTIterator(TreeNode root) {
-        inOrderTraversal(root);
+    public BSTIterator(final TreeNode root) {
+        final TreeNode leftmostChild = findLeftmostChild(root);
+        nextNodesStack.push(leftmostChild);
+        currentNode = null;
     }
-    
+        
     /** @return the next smallest number */
     public int next() {
-        return sortedNodeValues.get(iteratorPosition++);
+        currentNode = nextNodesStack.pop();
+        if (currentNode.right != null) {
+            final TreeNode leftmostChild = findLeftmostChild(currentNode.right);
+            nextNodesStack.push(leftmostChild);                
+        }
+        return currentNode.val;
     }
     
     /** @return whether we have a next smallest number */
     public boolean hasNext() {
-        return iteratorPosition < sortedNodeValues.size();
+        if (nextNodesStack.isEmpty()) {
+            return currentNode.right != null;
+        }        
+        return true;
     }
     
-    private void inOrderTraversal(TreeNode node) {
-        if (node == null) {
-            return;
+    private TreeNode findLeftmostChild(final TreeNode node) {
+        if (node.left == null) {
+            return node;
         }
-        inOrderTraversal(node.left);
-        sortedNodeValues.add(node.val);
-        inOrderTraversal(node.right);
+        nextNodesStack.push(node);
+        return findLeftmostChild(node.left);
     }
 }
 
@@ -48,4 +57,3 @@ class BSTIterator {
  * int param_1 = obj.next();
  * boolean param_2 = obj.hasNext();
  */
- 
