@@ -6,3 +6,6 @@ Tests
 ["MyCircularQueue","isFull","isEmpty","deQueue","enQueue","Rear","Front","isEmpty","isFull","enQueue","Front","Rear","deQueue","isEmpty"]
 [[1],[],[],[],[1],[],[],[],[],[2],[],[],[],[]]
 // [null,false,true,false,true,1,1,false,true,false,1,1,true,true]
+["MyCircularQueue","enQueue","Rear","Front","deQueue","Front","deQueue","Front","enQueue","enQueue","enQueue","enQueue"]
+[[3],[2],[],[],[],[],[],[],[4],[2],[2],[3]]
+// [null,true,2,2,true,-1,false,-1,true,true,true,false]

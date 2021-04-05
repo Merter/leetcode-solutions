@@ -1,4 +1,4 @@
-class MyCircularQueue {
+class MyLinkedListBackedCircularQueue {
     
     private static class QueueNode {
         int val;
@@ -9,7 +9,7 @@ class MyCircularQueue {
     int size;
     QueueNode rear;
     
-    public MyCircularQueue(int k) {
+    public MyLinkedListBackedCircularQueue(int k) {
         capacity = k;
         size = 0;
         rear = null;
