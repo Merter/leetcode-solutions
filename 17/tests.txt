@@ -1,0 +1,8 @@
+Tests
+-----
+""	// []
+"2"	// ["a","b","c"]
+"7"	// ["p","q","r","s"]
+"23"	// ["ad","bd","cd","ae","be","ce","af","bf","cf"]
+"768"	// ["pmt","qmt","rmt","smt","pnt","qnt","rnt","snt","pot","qot","rot","sot","pmu","qmu","rmu","smu","pnu","qnu","rnu","snu","pou","qou","rou","sou","pmv","qmv","rmv","smv","pnv","qnv","rnv","snv","pov","qov","rov","sov"]
+"2975"	// ["awpj","bwpj","cwpj","axpj","bxpj","cxpj","aypj","bypj","cypj","azpj","bzpj","czpj","awqj","bwqj","cwqj","axqj","bxqj","cxqj","ayqj","byqj","cyqj","azqj","bzqj","czqj","awrj","bwrj","cwrj","axrj","bxrj","cxrj","ayrj","byrj","cyrj","azrj","bzrj","czrj","awsj","bwsj","cwsj","axsj","bxsj","cxsj","aysj","bysj","cysj","azsj","bzsj","czsj","awpk","bwpk","cwpk","axpk","bxpk","cxpk","aypk","bypk","cypk","azpk","bzpk","czpk","awqk","bwqk","cwqk","axqk","bxqk","cxqk","ayqk","byqk","cyqk","azqk","bzqk","czqk","awrk","bwrk","cwrk","axrk","bxrk","cxrk","ayrk","byrk","cyrk","azrk","bzrk","czrk","awsk","bwsk","cwsk","axsk","bxsk","cxsk","aysk","bysk","cysk","azsk","bzsk","czsk","awpl","bwpl","cwpl","axpl","bxpl","cxpl","aypl","bypl","cypl","azpl","bzpl","czpl","awql","bwql","cwql","axql","bxql","cxql","ayql","byql","cyql","azql","bzql","czql","awrl","bwrl","cwrl","axrl","bxrl","cxrl","ayrl","byrl","cyrl","azrl","bzrl","czrl","awsl","bwsl","cwsl","axsl","bxsl","cxsl","aysl","bysl","cysl","azsl","bzsl","czsl"]
