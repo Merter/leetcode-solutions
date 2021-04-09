@@ -1,0 +1,17 @@
+Tests
+-----
+["hello","leetcode"]
+"hlabcdefgijkmnopqrstuvwxyz"
+// true
+["word","world","row"]
+"worldabcefghijkmnpqstuvxyz"
+// false
+["apple", "app"]
+"abcdefghijklmnopqrstuvwxyz"
+// false
+["hello","hello"]
+"abcdefghijklmnopqrstuvwxyz"
+// true
+["l","h"]
+"xkbwnqozvterhpjifgualycmds"
+// false
