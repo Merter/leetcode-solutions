@@ -1,0 +1,9 @@
+Tests
+-----
+"abcabcbb"	// 3
+""	// 0
+"bbbbb"	// 1
+"pwwkew"	// 3
+"abccdefgab"	// 7
+"abccdefgaab"	// 6
+"abccdefgaabcdefgh"	// 8
