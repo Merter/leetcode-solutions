@@ -1,0 +1,23 @@
+Tests
+-----
+"ab"
+"acb"
+// true
+""
+""
+// false
+"a"
+"A"
+// true
+""
+"A"
+// true
+"a9aA"
+"9aA"
+// true
+"a9bA"
+"9aA"
+// false
+"a9bA"
+"a9aA"
+// true
