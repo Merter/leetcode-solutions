@@ -1,0 +1,8 @@
+Tests
+-----
+"abbaca"
+// "ca"
+"s"
+// "s"
+"abccba"
+// ""
