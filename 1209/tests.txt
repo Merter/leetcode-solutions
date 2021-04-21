@@ -1,0 +1,17 @@
+Tests
+-----
+"abcd"
+2
+// "abcd"
+"deeedbbcccbdaa"
+3
+// "aa"
+"pbbcggttciiippooaais"
+2
+// ps
+"bbbddddbb"
+4
+// "b"
+"aaabbbddddbbaabbb"
+4
+// "aaabaabbb"
