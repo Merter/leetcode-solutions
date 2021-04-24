@@ -1,0 +1,17 @@
+Tests
+-----
+"abc"
+4
+// "abc"
+"abcde"
+5
+// "abcde"
+"abcde"
+10
+// "abcde"
+"abcdABCD1234"
+12
+// "abcdABCD1234"
+"a"
+3
+// "a"
