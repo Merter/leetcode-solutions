@@ -1,0 +1,14 @@
+Tests
+-----
+"cbaebabacd"
+"abc"
+// [0,6]
+"abab"
+"ab"
+// [0, 1, 2]
+"aaaaaaaa"
+"aa"
+// [0,1,2,3,4,5,6]
+"aaaaaaaa"
+"b"
+// []
