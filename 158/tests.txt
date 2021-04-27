@@ -1,0 +1,59 @@
+Tests
+-----
+"abcd"
+[4]
+// ["abcd"]
+"abc"
+[4]
+// ["abc"]
+"abcde"
+[4]
+// ["abcd"]
+"abc"
+[1,2]
+// ["a","bc"]
+"abcd"
+[1,2,1]
+// ["a","bc", "d"]
+"abcde"
+[1,2,2]
+// ["a", "bc", "de"]
+"abcdefgh"
+[1,2,5]
+// ["a","bc","defgh"]
+"abcde"
+[4,2]
+// ["abcd", "e"]
+"abcde"
+[10]
+// ["abcde"]
+"ababc"
+[2,3]
+// ["ab","abc"]
+"abcdababc"
+[6,3]
+// ["abcdab","abc"]
+"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde"
+[30,20]
+// ["abcdeabcdeabcdeabcdeabcdeabcde","abcdeabcdeabcde"]
+"abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgh"
+[100,20,50,10,25,43]
+// ["abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcd","efghabcdefghabcdefgh","abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghab","cdefghabcd","efghabcdefghabcdefgh",""]
+"abc"
+[1,2,1]
+// ["a","bc",""]
+"abc"
+[4,1]
+// ["abc",""]
+"abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgh"
+[100,20,50,10,25,43,250,300,100,500]
+// ["abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcd","efghabcdefghabcdefgh","abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghab","cdefghabcd","efghabcdefghabcdefgh","","","","",""]
+"abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefgh"
+[100,20,50,12,25,43,41,174,201,500]
+// ["abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcdefghabcd","efghabcdefghabcdefgh","abcdefghabcdefghabcdefghabcdefghabcdefghabcdefghab","cdefghabcdef","ghabcdefghabcdefgh","","","","",""]
+"abc"
+[1,1,1,1]
+// ["a","b","c",""]
+"abcde"
+[1,4]
+// ["a","bcde"]
