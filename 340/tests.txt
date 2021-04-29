@@ -1,0 +1,38 @@
+Tests
+-----
+"eceba"
+2
+//	3
+"aa"
+1
+// 2
+"ecebcbc"
+2
+// 4
+"eecbcbc"
+2
+// 5
+"abaabcda"
+20
+// 8
+"a"
+20
+// 1
+"abaccc"
+2
+// 4
+"abccbc"
+2
+// 5
+"eeeeceeeeeeet"
+2
+// 12
+	"ecceeeeeeceeeeeeet"
+	2
+// 17
+"cdaba"
+3
+// 4
+"aba"
+1
+// 1
