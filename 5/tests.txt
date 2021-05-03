@@ -1,0 +1,8 @@
+Tests
+-----
+"a"	// "a"
+"ac"	// "c"
+"aba"	// "aba"
+"babad"	// "aba"
+"dababad"	// "dababad"
+"abacdfgdcaba"	// "aba"
