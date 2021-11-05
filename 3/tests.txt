@@ -7,3 +7,4 @@ Tests
 "abccdefgab"	// 7
 "abccdefgaab"	// 6
 "abccdefgaabcdefgh"	// 8
+"abcdefghijklmno847123"	// 21
