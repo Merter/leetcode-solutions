@@ -1,8 +1,36 @@
 class Solution {
+    
+    private static final int MAX_NUM = 1000;
+    
     public int[] intersect(int[] nums1, int[] nums2) {
-        final List<Integer> intersection = new ArrayList<>();
+        return intersectBySorting(nums1, nums2);
+    }
+    
+    private int[] intersectByCounting(int[] nums1, int[] nums2) {
+        int[] counts1 = countNums(nums1);
+        int[] counts2 = countNums(nums2);
+        List<Integer> intersection = new ArrayList<>();
+        for (int num=0; num<=MAX_NUM; num++) {
+            int count = Math.min(counts1[num], counts2[num]);
+            for (; count>0; count--) {
+                intersection.add(num);
+            }
+        }
+        return intersection.stream().mapToInt(i->i).toArray();
+    }
+    
+    private int[] countNums(int[] nums) {
+        int[] counts = new int[MAX_NUM+1];
+        for (int num : nums) {
+            counts[num]++;
+        }
+        return counts;
+    }
+    
+    private int[] intersectBySorting(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
+        List<Integer> intersection = new ArrayList<>();
         final int[] shorter = nums1.length<nums2.length ? nums1 : nums2;
         final int[] longer = shorter==nums1 ? nums2 : nums1;
         int shorterIndex = 0;
@@ -27,11 +55,6 @@ class Solution {
                 shorterIndex++;
             }
         }
-        final int[] intersectionArray = new int[intersection.size()];
-        int i = 0;
-        for (final int num : intersection) {
-            intersectionArray[i++] = num;
-        }
-        return intersectionArray;
+        return intersection.stream().mapToInt(i->i).toArray();
     }
 }
