@@ -1,5 +1,22 @@
 class Solution {
+
     public int[] twoSum(int[] numbers, int target) {
+        int smallIndex = 0;
+        int bigIndex = numbers.length-1;
+        while (true) {
+            int sum = numbers[smallIndex] + numbers[bigIndex];
+            if (sum == target) {
+                return new int[]{smallIndex+1, bigIndex+1};
+            }
+            if (sum < target) {
+                smallIndex++;
+            } else {
+                bigIndex--;
+            }
+        }
+    }
+
+    public int[] twoSumWithBinarySearch(int[] numbers, int target) {
         for (int i=0; i<numbers.length; i++) {
             int counterPart = target-numbers[i];
             int counterPartIndex = binarySearchInRangeInclusive(numbers, counterPart, i+1, numbers.length-1);
