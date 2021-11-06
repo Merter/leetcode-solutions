@@ -3,25 +3,24 @@
  * public class ListNode {
  *     int val;
  *     ListNode next;
- *     ListNode(int x) { val = x; }
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-public class Solution {
-    public ListNode reverseList(ListNode node) {
-        ListNode runner = node;
-        ListNode reversedHead = null;
-        while (runner != null) {
-            if (reversedHead == null) {
-                reversedHead = runner;
-                runner = runner.next;
-                reversedHead.next = null;
-            } else {
-                ListNode temp = runner.next;
-                runner.next = reversedHead;
-                reversedHead = runner;
-                runner = temp;
-            }
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null) {
+            return null;
         }
-        return reversedHead;
-    }    
+        ListNode prev = null;
+        while (head.next != null) {
+            ListNode next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;            
+        }        
+        head.next = prev;
+        return head;
+    }
 }
