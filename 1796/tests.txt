@@ -1,0 +1,8 @@
+Tests
+-----
+"dfa12321afd"	// 2
+"abc1111"	// -1
+"ash110ug0"	// 0
+"opd99pwj9oiw"	// -1
+"opd99pwj9oiw34ydud7bu8djsk0"	// 8
+"opd99pwj9oiw34ydud7bu8djsk7088sdfg"	// 8
