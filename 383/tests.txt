@@ -1,0 +1,14 @@
+Tests
+-----
+"a"
+"b"
+// false
+"aa"
+"ab"
+// false
+"aa"
+"aba"
+// true
+"aa"
+"a"
+// false
