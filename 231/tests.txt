@@ -1,0 +1,9 @@
+Tests
+-----
+1 // true
+2 // true
+0 // false
+-16 // false
+-2147483648 // false
+2147483647 // false
+1024 // true
