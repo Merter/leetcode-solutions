@@ -1,0 +1,14 @@
+Tests
+-----
+"anagram"
+"nagaram"
+// true
+"anagr"
+"garam"
+// false
+"nagr"
+"garam"
+// false
+"nagr"
+"gar"
+// false
