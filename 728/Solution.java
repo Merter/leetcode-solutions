@@ -1,5 +1,34 @@
 class Solution {
+
     public List<Integer> selfDividingNumbers(int left, int right) {
+        return selfDividingNumbersInPlace(left, right);
+    }
+
+    private List<Integer> selfDividingNumbersInPlace(int left, int right) {
+        List<Integer> selfDividingNumbers = new ArrayList<>();
+        for (int num=left; num<=right; num++) {
+            int numDigits = num;
+            boolean add = true;
+            while (numDigits != 0) {
+                int digit = numDigits % 10;
+                if (digit == 0) {
+                    add = false;
+                    break;
+                }
+                if (num%digit != 0) {
+                    add = false;
+                    break;
+                }
+                numDigits /= 10;
+            }
+            if (add) {
+                selfDividingNumbers.add(num);
+            }        
+        }
+        return selfDividingNumbers;
+    }
+
+    private List<Integer> selfDividingNumbersWithDigitListCalculation(int left, int right) {
         List<Integer> selfDividingNumbers = new ArrayList<>();
         for (int num=left; num<=right; num++) {
             if (Solution.isSelfDividingNumber(num)) {
