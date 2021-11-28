@@ -1,0 +1,7 @@
+Tests
+-----
+["flower","flow","flight"]	// "fl"
+["dog","racecar","car"]	// ""
+["dog","dog","dogs","dogs","dog"]	// "dog"
+["dog"]	// "dog"
+["dog","dogs","dog","dogs","dog",""]	// ""
