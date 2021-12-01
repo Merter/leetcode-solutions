@@ -9,6 +9,6 @@ class Solution {
             excludingLast = temp;
             includingLast = Math.max(includingLast, excludingLast);
         }
-        return Math.max(includingLast, excludingLast);
+        return includingLast;
     }
 }
