@@ -1,36 +1,29 @@
 class Solution {
-    public void nextPermutation(final int[] nums) {
-        if (nums==null || nums.length<2) {
-            return;
-        }
-        int indexFromRight = nums.length-1;
-        while (indexFromRight >= 1) {
-            if (nums[indexFromRight] > nums[indexFromRight-1]) {
-                break;
-            }
-            indexFromRight--;
-        }
-        if (indexFromRight == 0) {
+    public void nextPermutation(int[] nums) {
+        int lastIncreaseIndex = nums.length-1;
+        while (lastIncreaseIndex>0 && nums[lastIncreaseIndex-1]>=nums[lastIncreaseIndex]) lastIncreaseIndex--;
+        if (lastIncreaseIndex == 0) {
             reverseStartingFrom(nums, 0);
             return;
         }
-        final int indexToBeSwapped = indexFromRight-1;
-        while (indexFromRight<nums.length && nums[indexFromRight]>nums[indexToBeSwapped]) {
-            indexFromRight++;
+        int lastIndexOfTheNextBiggest = lastIncreaseIndex--;
+        for (int i=lastIndexOfTheNextBiggest; i<nums.length; i++) {
+            if (nums[lastIncreaseIndex]<nums[i] && nums[i]<=nums[lastIndexOfTheNextBiggest]) {
+                lastIndexOfTheNextBiggest = i;
+            }
         }
-        swap(nums, indexToBeSwapped, indexFromRight-1);
-        reverseStartingFrom(nums, indexToBeSwapped+1);
+        swap(nums, lastIncreaseIndex, lastIndexOfTheNextBiggest);
+        reverseStartingFrom(nums, lastIncreaseIndex+1);
     }
     
-    private void reverseStartingFrom(final int[] nums, final int begin) {
-        final int end = nums.length-1;
-        for (int offset=0; offset<(end-begin+1)/2; offset++) {
-            swap(nums, begin+offset, end-offset);
+    private void reverseStartingFrom(int[] nums, int start) {
+        for (int offset=0; offset<(nums.length-start)/2; offset++) {
+            swap(nums, start+offset, nums.length-1-offset);
         }
     }
     
-    private void swap(final int[] nums, final int from, final int to) {
-        final int temp = nums[from];
+    private void swap(int[] nums, int from, int to) {
+        int temp = nums[from];
         nums[from] = nums[to];
         nums[to] = temp;
     }
