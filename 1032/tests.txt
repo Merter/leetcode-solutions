@@ -1,0 +1,8 @@
+Tests
+-----
+["StreamChecker","query","query","query","query","query","query","query","query","query","query","query","query"]
+[[["cd","f","kl"]],["a"],["b"],["c"],["d"],["e"],["f"],["g"],["h"],["i"],["j"],["k"],["l"]]
+// [null,false,false,false,true,false,true,false,false,false,false,false,true]
+["StreamChecker","query","query","query","query","query","query","query","query","query","query","query","query","query","query","query","query","query","query"]
+[[["cd","f","kl","acd","ecd","akl","hgacd"]],["a"],["b"],["c"],["d"],["e"],["f"],["g"],["h"],["i"],["j"],["k"],["l"],["l"],["h"],["g"],["a"],["c"],["d"]]
+// [null,false,false,false,true,false,true,false,false,false,false,false,true,false,false,false,false,false,true]
