@@ -1,20 +1,15 @@
 class Solution {
     public int maxPower(String s) {
         int maxPower = 1;
-        int currentPower = 1;
+        int currPower = 1;
         for (int i=1; i<s.length(); i++) {
-            if (s.charAt(i-1) == s.charAt(i)) {
-                currentPower++;
+            if (s.charAt(i) == s.charAt(i-1)) {
+                currPower++;
             } else {
-                if (currentPower > maxPower) {
-                    maxPower = currentPower;
-                }
-                currentPower = 1;
-            }            
+                maxPower = Math.max(maxPower, currPower);
+                currPower = 1;
+            }
         }
-        if (currentPower > maxPower) {
-            maxPower = currentPower;
-        }        
-        return maxPower;
+        return Math.max(maxPower, currPower);
     }
 }
