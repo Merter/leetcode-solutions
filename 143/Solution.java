@@ -53,5 +53,36 @@ public class Solution {
             }
         }
         return reversedHead;
-    }    
+    }
+
+    private void reorderListWithStack(ListNode head) {
+        if (head.next == null) {
+            return;
+        }
+        ListNode singleRunner = head;
+        ListNode doubleRunner = head;
+        while (true) {
+            doubleRunner = doubleRunner.next;
+            if (doubleRunner == null) break;
+            doubleRunner = doubleRunner.next;
+            if (doubleRunner == null) break;
+            singleRunner = singleRunner.next;
+        }
+        // reverse the right half of the list by using a stack
+        Deque<ListNode> stack = new ArrayDeque<>();
+        while (singleRunner.next != null) {
+            ListNode temp = singleRunner.next;
+            singleRunner.next = temp.next;
+            temp.next = null;
+            stack.push(temp);
+        }
+        // insert the nodes in stack through the left half of the list
+        singleRunner = head;
+        while (! stack.isEmpty()) {
+            ListNode temp = stack.pop();
+            temp.next = singleRunner.next;
+            singleRunner.next = temp;
+            singleRunner = temp.next;
+        }
+    }   
 }
